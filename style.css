@@ -44,3 +44,123 @@ footer {
     text-align: center;
 }
 
+/* Chat container style */
+.chat-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+    box-shadow: 0 0 10px #ccc;
+    padding: 20px;
+    background: white;
+}
+
+/* Chat box style */
+#chat-box {
+
+    height: 400px; /* Fixed height for chat box */
+    overflow-y: auto; /* Enable vertical scroll */
+    border: 1px solid #ccc; /* Chat box 边框 */
+    padding: 10px; /* 内部填充 */
+    margin-bottom: 10px; /* 聊天框下方的外边距 */
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* Input and button style */
+#chat-input, #send-btn {
+    padding: 10px;
+    margin-top: 10px;
+}
+  
+#chat-input {
+    width: calc(100% - 120px); /* Adjust width for the button */
+    margin-right: 10px;
+    display: inline-block;
+
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+  
+#send-btn {
+    width: 100px; /* Width of the button */
+    display: inline-block;
+
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#send-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  
+/* Message style */
+.message {
+    display: flex;
+    max-width: 80%; /* Message max width */
+    margin-bottom: 10px;
+    word-wrap: break-word; /* Ensure text breaks */
+}
+  
+/* Emoji style */
+.emoji {
+    font-size: 24px; /* Emoji size */
+    margin-right: 10px;
+}
+  
+/* Text style */
+.text {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 16px;
+    margin: 0 10px; /* Add margin between emoji and text */
+   
+    max-width: calc(100% - 40px); /* Prevent overflow */
+}
+  
+/* Style for messages from the user */
+.user-message {
+    /* align-self: flex-end;  */
+    /* Align user message to right */
+
+    /* align-items: center; */
+    justify-content: flex-end; /* Align message to right */
+    margin-left: auto; /* Push message to the right */
+}
+  
+.user-message .emoji {
+    order: 2; /* Put emoji after the text */
+}
+  
+.user-message .text {
+    background-color: #007bff;
+    color: white;
+    order: 1; /* Put text before the emoji */
+}
+  
+/* Style for messages from the chatbot */
+.bot-message {
+    align-self: flex-start; /* Align bot message to left */
+}
+  
+.bot-message .emoji {
+    order: 1; /* Put emoji before the text */
+}
+  
+.bot-message .text {
+    background-color: #e9e9eb;
+    order: 2; /* Put text after the emoji */
+}
+
+/* Additional media query for responsiveness */
+@media (max-width: 600px) {
+    .chat-container {
+        width: 100%;
+        padding: 10px;
+  }
+}
