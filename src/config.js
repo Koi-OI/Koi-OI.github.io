@@ -1,26 +1,32 @@
+/*
+ * @Author: Jingwei Wu
+ * @Date: 2025-04-25 21:34:37
+ * @LastEditTime: 2025-04-25 23:08:02
+ * @description:
+ */
 module.exports = {
-  email: 'brittany.chiang@gmail.com',
+  email: 'jingweik8259@gmail.com',
 
   socialMedia: [
     {
       name: 'GitHub',
-      url: 'https://github.com/bchiang7',
+      url: 'https://github.com/Koi-OI',
     },
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/bchiang7',
+      url: 'https://www.instagram.com',
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/bchiang7',
+      url: 'https://twitter.com',
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/bchiang7',
+      url: 'https://www.linkedin.com/in/jingwei-wu-833859328',
     },
     {
       name: 'Codepen',
-      url: 'https://codepen.io/bchiang7',
+      url: 'https://codepen.io',
     },
   ],
 
